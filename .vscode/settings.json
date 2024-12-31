@@ -1,0 +1,7 @@
+{
+    "ros.distro": "foxy",
+    "python.analysis.extraPaths": [
+        "/opt/ros/foxy/lib/python3.x/site-packages"
+    ]
+    
+}
