@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "Controller = hvac_control.Controller:main",
+            "UI = hvac_control.UI:main"
         ],
     },
 )
