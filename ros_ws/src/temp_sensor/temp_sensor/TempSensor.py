@@ -6,6 +6,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Temperature
 from std_msgs.msg import Int32
 from std_srvs.srv import Empty
+from example_interfaces.srv import AddTwoInts
 
 
 
