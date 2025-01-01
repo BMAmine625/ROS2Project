@@ -1,0 +1,24 @@
+[0.516s] Invoking command in '/workspaces/ROS2Project/build/temp_sensor': PYTHONPATH=/workspaces/ROS2Project/build/temp_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/build/temp_sensor/build --no-deps symlink_data
+[0.705s] running develop
+[0.784s] running egg_info
+[0.784s] creating temp_sensor.egg-info
+[0.784s] writing temp_sensor.egg-info/PKG-INFO
+[0.784s] writing dependency_links to temp_sensor.egg-info/dependency_links.txt
+[0.785s] writing entry points to temp_sensor.egg-info/entry_points.txt
+[0.785s] writing requirements to temp_sensor.egg-info/requires.txt
+[0.785s] writing top-level names to temp_sensor.egg-info/top_level.txt
+[0.787s] writing manifest file 'temp_sensor.egg-info/SOURCES.txt'
+[0.912s] reading manifest file 'temp_sensor.egg-info/SOURCES.txt'
+[0.913s] writing manifest file 'temp_sensor.egg-info/SOURCES.txt'
+[0.944s] running build_ext
+[0.944s] Creating /workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages/site.py
+[0.946s] Creating /workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages/temp-sensor.egg-link (link to .)
+[0.947s] 
+[0.947s] Installed /workspaces/ROS2Project/build/temp_sensor
+[0.947s] running symlink_data
+[0.948s] creating /workspaces/ROS2Project/install/temp_sensor/share/ament_index
+[0.948s] creating /workspaces/ROS2Project/install/temp_sensor/share/ament_index/resource_index
+[0.948s] creating /workspaces/ROS2Project/install/temp_sensor/share/ament_index/resource_index/packages
+[0.948s] symbolically linking /workspaces/ROS2Project/build/temp_sensor/resource/temp_sensor -> /workspaces/ROS2Project/install/temp_sensor/share/ament_index/resource_index/packages
+[0.948s] symbolically linking /workspaces/ROS2Project/build/temp_sensor/package.xml -> /workspaces/ROS2Project/install/temp_sensor/share/temp_sensor
+[0.970s] Invoked command in '/workspaces/ROS2Project/build/temp_sensor' returned '0': PYTHONPATH=/workspaces/ROS2Project/build/temp_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/build/temp_sensor/build --no-deps symlink_data

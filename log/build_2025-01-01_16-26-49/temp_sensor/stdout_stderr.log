@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating temp_sensor.egg-info
+writing temp_sensor.egg-info/PKG-INFO
+writing dependency_links to temp_sensor.egg-info/dependency_links.txt
+writing entry points to temp_sensor.egg-info/entry_points.txt
+writing requirements to temp_sensor.egg-info/requires.txt
+writing top-level names to temp_sensor.egg-info/top_level.txt
+writing manifest file 'temp_sensor.egg-info/SOURCES.txt'
+reading manifest file 'temp_sensor.egg-info/SOURCES.txt'
+writing manifest file 'temp_sensor.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages/site.py
+Creating /workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages/temp-sensor.egg-link (link to .)
+
+Installed /workspaces/ROS2Project/build/temp_sensor
+running symlink_data
+creating /workspaces/ROS2Project/install/temp_sensor/share/ament_index
+creating /workspaces/ROS2Project/install/temp_sensor/share/ament_index/resource_index
+creating /workspaces/ROS2Project/install/temp_sensor/share/ament_index/resource_index/packages
+symbolically linking /workspaces/ROS2Project/build/temp_sensor/resource/temp_sensor -> /workspaces/ROS2Project/install/temp_sensor/share/ament_index/resource_index/packages
+symbolically linking /workspaces/ROS2Project/build/temp_sensor/package.xml -> /workspaces/ROS2Project/install/temp_sensor/share/temp_sensor

@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing temp_sensor.egg-info/PKG-INFO
+writing dependency_links to temp_sensor.egg-info/dependency_links.txt
+writing entry points to temp_sensor.egg-info/entry_points.txt
+writing requirements to temp_sensor.egg-info/requires.txt
+writing top-level names to temp_sensor.egg-info/top_level.txt
+reading manifest file 'temp_sensor.egg-info/SOURCES.txt'
+writing manifest file 'temp_sensor.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/ROS2Project/install/temp_sensor/lib/python3.8/site-packages/temp-sensor.egg-link (link to .)
+Installing TempSensor script to /workspaces/ROS2Project/install/temp_sensor/lib/temp_sensor
+
+Installed /workspaces/ROS2Project/build/temp_sensor
+running symlink_data

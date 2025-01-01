@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating hvac_actuators.egg-info
+writing hvac_actuators.egg-info/PKG-INFO
+writing dependency_links to hvac_actuators.egg-info/dependency_links.txt
+writing entry points to hvac_actuators.egg-info/entry_points.txt
+writing requirements to hvac_actuators.egg-info/requires.txt
+writing top-level names to hvac_actuators.egg-info/top_level.txt
+writing manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+reading manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+writing manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/ROS2Project/install/hvac_actuators/lib/python3.8/site-packages/site.py
+Creating /workspaces/ROS2Project/install/hvac_actuators/lib/python3.8/site-packages/hvac-actuators.egg-link (link to .)
+
+Installed /workspaces/ROS2Project/build/hvac_actuators
+running symlink_data
+creating /workspaces/ROS2Project/install/hvac_actuators/share/ament_index
+creating /workspaces/ROS2Project/install/hvac_actuators/share/ament_index/resource_index
+creating /workspaces/ROS2Project/install/hvac_actuators/share/ament_index/resource_index/packages
+symbolically linking /workspaces/ROS2Project/build/hvac_actuators/resource/hvac_actuators -> /workspaces/ROS2Project/install/hvac_actuators/share/ament_index/resource_index/packages
+symbolically linking /workspaces/ROS2Project/build/hvac_actuators/package.xml -> /workspaces/ROS2Project/install/hvac_actuators/share/hvac_actuators

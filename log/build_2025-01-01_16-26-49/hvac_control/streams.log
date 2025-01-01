@@ -1,0 +1,24 @@
+[0.923s] Invoking command in '/workspaces/ROS2Project/build/hvac_control': PYTHONPATH=/workspaces/ROS2Project/build/hvac_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/install/hvac_control/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/build/hvac_control/build --no-deps symlink_data
+[1.214s] running develop
+[1.330s] running egg_info
+[1.331s] creating hvac_control.egg-info
+[1.331s] writing hvac_control.egg-info/PKG-INFO
+[1.331s] writing dependency_links to hvac_control.egg-info/dependency_links.txt
+[1.332s] writing entry points to hvac_control.egg-info/entry_points.txt
+[1.332s] writing requirements to hvac_control.egg-info/requires.txt
+[1.332s] writing top-level names to hvac_control.egg-info/top_level.txt
+[1.338s] writing manifest file 'hvac_control.egg-info/SOURCES.txt'
+[1.391s] reading manifest file 'hvac_control.egg-info/SOURCES.txt'
+[1.392s] writing manifest file 'hvac_control.egg-info/SOURCES.txt'
+[1.462s] running build_ext
+[1.462s] Creating /workspaces/ROS2Project/install/hvac_control/lib/python3.8/site-packages/site.py
+[1.465s] Creating /workspaces/ROS2Project/install/hvac_control/lib/python3.8/site-packages/hvac-control.egg-link (link to .)
+[1.466s] 
+[1.467s] Installed /workspaces/ROS2Project/build/hvac_control
+[1.467s] running symlink_data
+[1.468s] creating /workspaces/ROS2Project/install/hvac_control/share/ament_index
+[1.468s] creating /workspaces/ROS2Project/install/hvac_control/share/ament_index/resource_index
+[1.468s] creating /workspaces/ROS2Project/install/hvac_control/share/ament_index/resource_index/packages
+[1.469s] symbolically linking /workspaces/ROS2Project/build/hvac_control/resource/hvac_control -> /workspaces/ROS2Project/install/hvac_control/share/ament_index/resource_index/packages
+[1.469s] symbolically linking /workspaces/ROS2Project/build/hvac_control/package.xml -> /workspaces/ROS2Project/install/hvac_control/share/hvac_control
+[1.502s] Invoked command in '/workspaces/ROS2Project/build/hvac_control' returned '0': PYTHONPATH=/workspaces/ROS2Project/build/hvac_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/install/hvac_control/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/build/hvac_control/build --no-deps symlink_data

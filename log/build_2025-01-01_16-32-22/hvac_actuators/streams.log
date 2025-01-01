@@ -1,0 +1,16 @@
+[1.170s] Invoking command in '/workspaces/ROS2Project/build/hvac_actuators': PYTHONPATH=/workspaces/ROS2Project/build/hvac_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/install/hvac_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/build/hvac_actuators/build --no-deps symlink_data
+[1.491s] running develop
+[1.649s] running egg_info
+[1.650s] writing hvac_actuators.egg-info/PKG-INFO
+[1.650s] writing dependency_links to hvac_actuators.egg-info/dependency_links.txt
+[1.654s] writing entry points to hvac_actuators.egg-info/entry_points.txt
+[1.656s] writing requirements to hvac_actuators.egg-info/requires.txt
+[1.656s] writing top-level names to hvac_actuators.egg-info/top_level.txt
+[1.695s] reading manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+[1.696s] writing manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+[1.746s] running build_ext
+[1.746s] Creating /workspaces/ROS2Project/install/hvac_actuators/lib/python3.8/site-packages/hvac-actuators.egg-link (link to .)
+[1.747s] 
+[1.747s] Installed /workspaces/ROS2Project/build/hvac_actuators
+[1.748s] running symlink_data
+[1.781s] Invoked command in '/workspaces/ROS2Project/build/hvac_actuators' returned '0': PYTHONPATH=/workspaces/ROS2Project/build/hvac_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/install/hvac_actuators/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/build/hvac_actuators/build --no-deps symlink_data
