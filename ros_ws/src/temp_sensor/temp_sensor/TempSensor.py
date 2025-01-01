@@ -4,6 +4,8 @@ import random
 from datetime import date,datetime
 from rclpy.node import Node
 from sensor_msgs.msg import Temperature
+from std_msgs.msg import Int32
+from std_srvs.srv import Empty
 
 
 
@@ -26,8 +28,11 @@ class TempSensor(Node):
         self.tcs:float = 0
         self.InitOutTemp()
         self.InitOTC()
-        self.rooms:list[Room]
+        self.rooms:list[Room] = [None]
         self.outTempPub = self.create_publisher(Temperature, "/Temp/OutTemp", 10)
+        self.roomCountPub = self.create_publisher(Int32, "/Temp/RoomCount", 10)
+        self.roomTempPubList:list = [None]
+        self.roomAreaPubList:list = [None]
         self.UpdateMaxMinTemp = self.create_timer(86400.0,self.RandomOutTemp)
         self.UpdateOTC = self.create_timer(86400.0,self.InitOTC)
         self.printLog = self.create_timer(1.0,self.MainCallBack)
@@ -54,14 +59,53 @@ class TempSensor(Node):
             self.tco = (self.maxminTemp[1]-self.maxminTemp[0])/14
          
     def AddRoom(self,room:Room):
-       self.rooms.append(room)
+        self.rooms.append(room)
+        count = self.GetRoomCount()
+        self.roomTempPubList.append(self.create_publisher(Temperature, f"/Temp/Room{count}Temp", 10))
+        self.roomAreaPubList.append(self.create_publisher(Int32, f"/Temp/Room{count}Area", 10))
+
+    def GetRoomCount(self)->int:
+        count = 0
+        if self.rooms!=None:
+            for room in self.rooms:
+                if room==None:
+                    break
+                count += 1
+        return count
     
     def MainCallBack(self):
-        tempMsg = Temperature()
-        tempMsg.temperature = self.outTemp
-        self.outTempPub.publish(tempMsg)
-        self.get_logger().info(f"Temp outside is:{self.outTemp}")
-    
+        roomCountMsg = Int32()
+        roomCountMsg.data = self.GetRoomCount()
+        self.roomCountPub.publish(roomCountMsg)
+        outTempMsg = Temperature()
+        outTempMsg.temperature = self.outTemp
+        self.outTempPub.publish(outTempMsg)
+        count = 0
+        for roomTempPub in self.roomTempPubList:
+            roomTempMsg = Temperature()
+            if(self.rooms[count]==None):
+                break
+            roomTempMsg.temperature = self.rooms[count].temp
+            roomTempMsg.variance = self.rooms[count].prefTemp
+            roomTempPub.publish(roomTempMsg)
+        count = 0
+        for roomAreaPub in self.roomAreaPubList:
+            roomAreaMsg = Int32()
+            if(self.rooms[count]==None):
+                break
+            roomAreaMsg.data = self.rooms[count].area
+            roomAreaPub.publish(roomAreaMsg)
+        roomslog:str = "\n\tRoomsInfo:"
+        i:int = 1
+        for room in self.rooms:
+            if(room==None):
+                roomslog+="    No room."
+                break
+            roomslog += f"\n-Room{i}:Area={room.area}m²/Temp={room.temp}°C/PreferredTemp={room.prefTemp}°C"
+        self.get_logger().info(f"Temp outside is:{self.outTemp}     RoomsCount:{self.GetRoomCount()}"+roomslog)
+
+    def CallAddRoom(self):
+        client = self.create_client(Empty,"/Temp/AddRoom")
 
 def main(args=None):
     rclpy.init(args=args)
