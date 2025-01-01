@@ -1,0 +1,24 @@
+[1.119s] Invoking command in '/workspaces/ROS2Project/ros_ws/build/hvac_actuators': PYTHONPATH=/workspaces/ROS2Project/ros_ws/build/hvac_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/ros_ws/install/hvac_actuators/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/ros_ws/build/hvac_actuators/build --no-deps symlink_data
+[1.405s] running develop
+[1.530s] running egg_info
+[1.530s] creating hvac_actuators.egg-info
+[1.531s] writing hvac_actuators.egg-info/PKG-INFO
+[1.532s] writing dependency_links to hvac_actuators.egg-info/dependency_links.txt
+[1.534s] writing entry points to hvac_actuators.egg-info/entry_points.txt
+[1.534s] writing requirements to hvac_actuators.egg-info/requires.txt
+[1.534s] writing top-level names to hvac_actuators.egg-info/top_level.txt
+[1.540s] writing manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+[1.603s] reading manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+[1.604s] writing manifest file 'hvac_actuators.egg-info/SOURCES.txt'
+[1.656s] running build_ext
+[1.657s] Creating /workspaces/ROS2Project/ros_ws/install/hvac_actuators/lib/python3.8/site-packages/site.py
+[1.662s] Creating /workspaces/ROS2Project/ros_ws/install/hvac_actuators/lib/python3.8/site-packages/hvac-actuators.egg-link (link to .)
+[1.664s] 
+[1.664s] Installed /workspaces/ROS2Project/ros_ws/build/hvac_actuators
+[1.664s] running symlink_data
+[1.664s] creating /workspaces/ROS2Project/ros_ws/install/hvac_actuators/share/ament_index
+[1.664s] creating /workspaces/ROS2Project/ros_ws/install/hvac_actuators/share/ament_index/resource_index
+[1.665s] creating /workspaces/ROS2Project/ros_ws/install/hvac_actuators/share/ament_index/resource_index/packages
+[1.665s] symbolically linking /workspaces/ROS2Project/ros_ws/build/hvac_actuators/resource/hvac_actuators -> /workspaces/ROS2Project/ros_ws/install/hvac_actuators/share/ament_index/resource_index/packages
+[1.665s] symbolically linking /workspaces/ROS2Project/ros_ws/build/hvac_actuators/package.xml -> /workspaces/ROS2Project/ros_ws/install/hvac_actuators/share/hvac_actuators
+[1.728s] Invoked command in '/workspaces/ROS2Project/ros_ws/build/hvac_actuators' returned '0': PYTHONPATH=/workspaces/ROS2Project/ros_ws/build/hvac_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/ROS2Project/ros_ws/install/hvac_actuators/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/ROS2Project/ros_ws/build/hvac_actuators/build --no-deps symlink_data

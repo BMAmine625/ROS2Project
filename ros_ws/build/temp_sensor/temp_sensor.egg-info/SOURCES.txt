@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/temp_sensor
+temp_sensor/TempSensor.py
+temp_sensor/__init__.py
+temp_sensor.egg-info/PKG-INFO
+temp_sensor.egg-info/SOURCES.txt
+temp_sensor.egg-info/dependency_links.txt
+temp_sensor.egg-info/entry_points.txt
+temp_sensor.egg-info/requires.txt
+temp_sensor.egg-info/top_level.txt
+temp_sensor.egg-info/zip-safe
